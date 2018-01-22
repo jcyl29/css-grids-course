@@ -2,25 +2,37 @@
 .grid {
 	display: grid;
 
-	grid-template: 100px 200px
+	grid-template: 100px 100px 100px 
 		/ 200px auto 150px;
 	
-	/*grid-row-gap: 10px;*/
-	/*grid-column-gap: 20px;*/
-
-	grid-gap: 10px;
-
+	grid-template-areas: 
+	"E . A"
+	"B C A"
+	"B D F"
 }
 
-.grid div:nth-child(6) {
-	order: -1
- }
+/*using the "." means free out the space in the area*/
 
-.grid div:nth-child(3) {
-	order: 1
+.grid div:nth-child(1) {
+	grid-area: A;
 }
 
 .grid div:nth-child(2) {
-	order: 0
+	grid-area: B;
 }
 
+.grid div:nth-child(3) {
+	grid-area: C;
+}
+
+.grid div:nth-child(4) {
+	grid-area: D;
+}
+
+.grid div:nth-child(5) {
+	grid-area: E;
+}
+
+.grid div:nth-child(6) {
+	grid-area: F;
+}
