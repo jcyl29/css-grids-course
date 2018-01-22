@@ -2,33 +2,25 @@
 .grid {
 	display: grid;
 
-	/*grid-template-rows: 100px 200px;*/
-	/*grid-template-columns: 200px auto 150px;*/
-
-	/*index starts at one with css grids, not 0.*/
-	
-	/*short hand for above*/
-	grid-template: [row-1-start] 100px [row-1-end- row-2-start] 200px [row-2-end] 80px
+	grid-template: 100px 200px
 		/ 200px auto 150px;
+	
+	/*grid-row-gap: 10px;*/
+	/*grid-column-gap: 20px;*/
+
+	grid-gap: 10px;
+
 }
 
+.grid div:nth-child(6) {
+	order: -1
+ }
 
-
-.grid div:nth-child(1) {
-	grid-row: auto / span 2;
+.grid div:nth-child(3) {
+	order: 1
 }
-/*.grid div:nth-child(2) {
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 3;
-	grid-column-end: 4;
-}
-*/
 
-/*short hand for above*/
 .grid div:nth-child(2) {
-	grid-row: row-1-start/row-2-start;
-	grid-column: 3/4;
+	order: 0
 }
-
 

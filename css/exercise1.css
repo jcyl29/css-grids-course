@@ -1,0 +1,31 @@
+/* Put your code here */
+.grid {
+	display: grid;
+
+	grid-template: 100px 500px 300px
+		/ 60%;
+	
+	/*grid-row-gap: 10px;*/
+	/*grid-column-gap: 20px;*/
+
+	grid-gap: 10px;
+
+}
+
+.grid div:nth-child(1) {
+	grid-column: auto / span 2;
+	background-color: #333333;
+}
+
+.grid div:nth-child(2) {
+	background-color: #999999;
+}
+
+.grid div:nth-child(3) {
+	background-color: #666666;
+}
+
+.grid div:nth-child(4) {
+	grid-column: auto / span 2;
+	background-color: #888888;
+}
