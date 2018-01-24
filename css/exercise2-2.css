@@ -1,0 +1,12 @@
+/* Put your code here */
+.grid {
+	display: grid;
+
+	grid-template: repeat(6, 50px)
+		/ repeat(12, 1fr);
+	grid-gap: .5rem;
+}
+
+.grid-item {
+	background: lightgrey;
+}

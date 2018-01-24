@@ -1,0 +1,51 @@
+/* Put your code here */
+.grid {
+	display: grid;
+
+	grid-template: 10vh 20vh 30vh 20vh 10vh
+		/ repeat(4, 1fr);
+	grid-gap: .5rem;
+	grid-template-areas: 
+		"h h h h"
+		"sh1 sh1 sh2 sh2"
+		"b b b b"
+		"sf1 sf1 sf2 sf2"
+		"f f f f"
+}
+
+.header {
+	grid-area: h;
+	background-color: red;
+
+}
+
+.subheader-1 {
+	grid-area: sh1;
+	background-color: lightgoldenrodyellow;
+}
+
+.subheader-2 {
+	grid-area: sh2;
+	background-color: lightgoldenrodyellow;
+}
+
+.body {
+	grid-area: b;
+	background-color: darkorange;
+}
+
+.subfooter-1 {
+	grid-area: sf1;
+	background-color: cornflowerblue;
+}
+
+.subfooter-2 {
+	grid-area: sf2;
+	background-color: cornflowerblue;
+}
+
+
+.footer {
+	grid-area: f;
+	background-color: burlywood;
+}

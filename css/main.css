@@ -2,34 +2,7 @@
 .grid {
 	display: grid;
 
-	grid-template: 100px 100px 100px 
-		/ repeat(10, [col] 20px [large] 40px);
+	grid-template: 100px 100px 100px
+		/ repeat(auto-fit, minmax(100px, 1fr));
 	
-	grid-gap: 10px;
-}
-
-/*using the "." means free out the space in the area*/
-
-.grid div:nth-child(1) {
-	grid-area: A;
-}
-
-.grid div:nth-child(2) {
-	grid-column: small 1 / large 3;
-}
-
-.grid div:nth-child(3) {
-	grid-area: C;
-}
-
-.grid div:nth-child(4) {
-	grid-area: D;
-}
-
-.grid div:nth-child(5) {
-	grid-area: E;
-}
-
-.grid div:nth-child(6) {
-	grid-area: F;
 }
